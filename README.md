@@ -61,7 +61,7 @@ Recruiters rely on ATS systems that filter resumes based on **keyword relevance*
 ---
 
 ## 🧱 Project Structure
-
+```
 Smart-ATS/
 │
 ├── backend/
@@ -75,7 +75,7 @@ Smart-ATS/
 │ └── package.json
 │
 └── README.md
-
+```
 ---
 
 ## ⚙️ How It Works
