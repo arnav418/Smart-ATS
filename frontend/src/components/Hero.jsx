@@ -1,10 +1,25 @@
+import TypingText from "./TypingText";
+import "./Hero.css";
+
 function Hero() {
   return (
     <section className="hero">
-      <h1>Check if Your Resume is ATS Optimized</h1>
+      <TypingText
+        texts={[
+          "Smart ATS",
+          "ATS Resume Checker",
+          "Beat the ATS Filters",
+          "Get Noticed by Recruiters",
+          "Land Your Dream Job",
+          "Resume Optimization Made Easy",
+        ]}
+      />
+
+      <h2>Is Your Resume ATS-Ready?</h2>
+
       <p>
-        Analyze your resume against a job description and get an ATS score with
-        actionable feedback.
+        Upload your resume, paste a job description, and instantly get an ATS
+        match score with improvement suggestions.
       </p>
     </section>
   );
