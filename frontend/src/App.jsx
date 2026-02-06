@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
-import HowItWorks from "./components/HowItWorks";
+import HowItWorks from "./components/HowitWorks";
 import ResumeForm from "./components/ResumeForm";
 import ResultCard from "./components/ResultCard";
 import Footer from "./components/Footer";
