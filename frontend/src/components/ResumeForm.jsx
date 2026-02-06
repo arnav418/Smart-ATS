@@ -18,7 +18,7 @@ function ResumeForm({ setResult }) {
     setLoading(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch("https://smart-ats-tdb9.onrender.com/analyze",{
         method: "POST",
         body: formData,
       });
