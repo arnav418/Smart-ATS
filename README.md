@@ -107,11 +107,16 @@ ATS Score (%) =
 ```bash
 git clone https://github.com/arnav418/Smart-ATS.git
 cd Smart-ATS
-
+```
+### 2️⃣ Backend (New Terminal in VS code)
+```bash
 cd backend
 pip install -r requirements.txt
 python app.py
-
+```
+### 3️⃣ Frontend (Launched in New Terminal)
+```bash
 cd frontend
 npm install
 npm run dev
+```
