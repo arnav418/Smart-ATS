@@ -35,10 +35,13 @@ function ResumeForm({ setResult }) {
   return (
     <section className="form-section">
       <input
-        type="file"
-        accept=".pdf"
-        onChange={(e) => setResumeFile(e.target.files[0])}
+        type="file" id="resume-upload" accept=".pdf"onChange={(e) => setResumeFile(e.target.files[0])}
+        style={{ display: "none" }}
       />
+
+      <label htmlFor="resume-upload" className="file-btn">
+        {resumeFile ? resumeFile.name : "Upload Resume (PDF)"}
+      </label>
 
       <textarea
         placeholder="Paste Job Description here..."
