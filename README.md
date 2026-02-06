@@ -1,4 +1,4 @@
-# Smart-ATS — Full-Stack Resume ATS Checker
+# Smart-ATS — Resume Checker
 
 Smart-ATS is a **full-stack web application** that analyzes a resume against a given job description and provides an **ATS (Applicant Tracking System) match score**, **missing keywords**, and **actionable suggestions** to improve resume alignment.
 
