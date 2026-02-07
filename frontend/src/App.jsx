@@ -6,6 +6,8 @@ import ResultCard from "./components/ResultCard";
 import Footer from "./components/Footer";
 import "./App.css";
 
+// Hello There
+
 function App() {
   const [result, setResult] = useState(null);
 
