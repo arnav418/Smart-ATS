@@ -4,7 +4,16 @@ from utils import analyze_resume
 import PyPDF2
 
 app = Flask(__name__)
-CORS(app)
+
+CORS(
+    app,
+    resources={r"/*": {
+        "origins": [
+            "http://localhost:5173",
+            "https://smart-ats-gamma.vercel.app"
+        ]
+    }}
+)
 
 @app.route("/health", methods=["GET"])
 def health():
@@ -26,9 +35,9 @@ def analyze():
         return jsonify({"error": "Resume file and JD required"}), 400
 
     resume_text = extract_text_from_pdf(resume_file)
-
     result = analyze_resume(resume_text, jd_text)
+
     return jsonify(result)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
